@@ -18,23 +18,35 @@
     <Button
             android:text="Button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button7" tools:layout_editor_absoluteY="16dp"
-            tools:layout_editor_absoluteX="32dp"/>
+            android:layout_height="wrap_content" android:id="@+id/button7"
+            android:layout_marginLeft="8dp" app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"/>
     <Button
             android:text="Button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button10" tools:layout_editor_absoluteY="16dp"
-            tools:layout_editor_absoluteX="280dp"/>
+            android:layout_height="wrap_content" android:id="@+id/button10"
+            android:layout_marginRight="8dp" app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"/>
     <Button
             android:text="Button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button11" tools:layout_editor_absoluteY="16dp"
-            tools:layout_editor_absoluteX="131dp"/>
+            android:layout_height="wrap_content" android:id="@+id/button11"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintRight_toLeftOf="@+id/button10"
+            android:layout_marginRight="8dp" app:layout_constraintLeft_toRightOf="@+id/button7"
+            android:layout_marginLeft="8dp"/>
     <android.support.design.widget.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-            app:fabSize="mini" app:srcCompat="@android:drawable/btn_radio" android:id="@+id/floatingActionButton"
-            tools:layout_editor_absoluteY="379dp" tools:layout_editor_absoluteX="154dp"/>
+            app:fabSize="normal" app:srcCompat="@android:drawable/btn_radio" android:id="@+id/floatingActionButton"
+            app:elevation="9dp"
+            app:layout_constraintBaseline_creator="@android:integer/config_longAnimTime"
+            tools:layout_constraintBaseline_toBaselineOf="@id/floatingActionButton"
+            tools:layout_constraintBottom_creator="@android:integer/config_longAnimTime"
+            tools:layout_constraintBottom_toBottomOf="@id/floatingActionButton" android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>

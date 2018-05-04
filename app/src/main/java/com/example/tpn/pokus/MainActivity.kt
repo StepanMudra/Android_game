@@ -10,6 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
          window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
          this.requestWindowFeature(android.view.Window.FEATURE_NO_TITLE)
-        setContentView(GameP(this))
+        setContentView(GamePan(this))
     }
 }
